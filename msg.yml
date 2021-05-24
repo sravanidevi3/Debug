@@ -1,0 +1,10 @@
+
+  -
+    name: Print name in Upper
+    hosts: host1
+    remote_user: root
+    vars:
+       my_name: sravanikrishna
+    tasks:
+        -debug: 
+             msg: "My name is {{ my_name | Upper }}" 
